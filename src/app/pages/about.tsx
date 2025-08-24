@@ -8,7 +8,7 @@ const AboutMe = () => {
       id="aboutme"
     >
       {/* Title */}
-      <h2 className="text-2xl font-bold text-blue-900 mb-6">About me</h2>
+      <h2 className="text-2xl font-bold text-[40px] text-blue-900 mb-6">About me</h2>
 
       <div className="flex flex-col md:flex-row  shadow-md rounded-lg p-6 gap-8 max-w-5xl">
         {/* Left Content */}

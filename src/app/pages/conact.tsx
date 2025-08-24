@@ -7,9 +7,9 @@ const ContactMe = () => {
     <section className="min-h-screen  flex items-center justify-center px-4" id='contact'>
       <div className="max-w-4xl w-full">
         <h2 className="text-center text-2xl font-semibold text-gray-800 mb-2">
-          <span className="text-green-500">Contact me</span>
+          <span className="text-white text-[40px]">Contact me</span>
         </h2>
-        <h1 className="text-center text-4xl font-bold text-gray-900 mb-2">
+        <h1 className="text-center text-4xl font-bold text-gray-600 mb-2">
           Let's Discuss Your <span className="text-green-500">Project</span>
         </h1>
         <p className="text-center text-gray-600 mb-10">

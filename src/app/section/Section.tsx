@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Mypic from "../images/mypic.png"; // works with next/image
+import Mypic from "../images/mypic2.png"; // works with next/image
 import { StarIcon } from "@heroicons/react/24/solid";
 const Dashboard = () => {
   return (
