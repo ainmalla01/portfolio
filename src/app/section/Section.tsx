@@ -1,61 +1,68 @@
 import Image from "next/image";
-import Mypic from "../images/mypic2.png"; // works with next/image
+import Mypic from "../images/mypic.png"; // works with next/image
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Inter, Lato, Orbitron } from "next/font/google";
+
+const Intersans = Inter({
+  weight: "700",
+  subsets: ["latin"],
+});
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // pick the weights you need
+});
+
 const Dashboard = () => {
   return (
-    <section className=" h-screen flex flex-col items-center gap-[4em] justify-center my-2">
-      <div className="flex items-center bg-blue-1000 justify-center">
-        <div className="content m-3 w-[50%]">
-          <h1 className="text-4xl font-bold text-white">
-            Hi, I’m Ain Malla 👋
-          </h1>
-          <p className="mt-4 text-lg text-gray-300">
-            A passionate{" "}
-            <span className="text-pink-500">Software Developer</span> from Nepal
-            🇳🇵 who loves building web and mobile applications with modern
-            technologies.
-          </p>
+    <section className="h-screen flex flex-col items-center gap-16 justify-center relative">
+      {/* Title */}
+      <h1
+        className={`${orbitron.className} text-[180px] absolute top-20 left-20 z-0 text-gray-200 opacity-20`}
+      >
+        Web Developer
+      </h1>
 
-          <div className="mt-6 flex gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600 transition"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-gray-400 text-gray-200 rounded-lg hover:bg-gray-800 transition"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-        <div className="image rounded-lg h-[45vh] w-[20vw]">
+      {/* Center Content */}
+      <div className="flex items-center justify-center flex-col relative z-10">
+        {/* Profile Image */}
+        <div className="rounded-lg h-[45vh] w-[20vw] shadow-lg">
           <Image
             src={Mypic}
             alt="My picture"
-            className=" rounded-[20%] h-full w-full drop-shadow-[0_0_10px_black] brightness-110 contrast-130"
+            className="rounded-[20%] h-full w-full drop-shadow-[0_0_10px_black] brightness-110 contrast-130 object-cover"
           />
         </div>
+
+        {/* Contact Button */}
+        <div className="mt-6">
+          <button
+            type="button"
+            className="h-12 w-32 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-300"
+          >
+            Contact
+          </button>
+        </div>
       </div>
-      <div className="mybref_view flex gap-4 p-2 max-w-[max-content] px-[5em] ">
+
+      {/* Stats Section */}
+      <div className="flex gap-8 p-4 px-20 mt-10 text-center">
         {/* Clients */}
-        <span className="h-[max-content] w-[20vw]  border-r border-white p-2  grid place-items-center gap-1">
-          <h1 className="text-[30px]">200+</h1>
-          <h3 className="text-[18px]">satisfied clients</h3>
+        <span className="w-[20vw] border-r border-white p-2 grid place-items-center">
+          <h1 className="text-[30px] font-bold">200+</h1>
+          <h3 className="text-[18px]">Satisfied Clients</h3>
         </span>
 
         {/* Projects */}
-        <span className="h-[max-content] w-[20vw]  border-r border-white p-2  grid place-items-center gap-1">
-          <h1 className="text-[30px]">90+</h1>
-          <h3 className="text-[18px]">projects completed</h3>
+        <span className="w-[20vw] border-r border-white p-2 grid place-items-center">
+          <h1 className="text-[30px] font-bold">90+</h1>
+          <h3 className="text-[18px]">Projects Completed</h3>
         </span>
 
         {/* Reviews */}
-        <span className="h-[max-content] w-[20vw] p-2  grid place-items-center gap-1">
-          <h1 className="text-[30px]">99+</h1>
-          <h3 className="text-[18px]">reviews given</h3>
+        <span className="w-[20vw] p-2 grid place-items-center">
+          <h1 className="text-[30px] font-bold">99+</h1>
+          <h3 className="text-[18px]">Reviews Given</h3>
         </span>
       </div>
     </section>

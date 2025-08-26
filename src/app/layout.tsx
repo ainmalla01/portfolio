@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./section/header";
 import Footer from "./section/footer";
+import Home from "./section/Home";
+
 
 
 const geistSans = Geist({
@@ -14,6 +16,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 
 export const metadata: Metadata = {
   title: "MyPortfolio",
@@ -32,6 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer/>
+        
+      
       </body>
     </html>
   );
