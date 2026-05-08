@@ -33,7 +33,7 @@ const Project = () => {
       className="h-screen flex items-center w-full justify-center flex-col"
       id="project"
     >
-      <h1 className="text-white text-[40px] m-4 text-3xl">List Of Project</h1>
+      <h1 className="text-white text-[40px] m-4 text-3xl"> Project</h1>
      <div className="container h-full w-[80%] grid grid-cols-3 items-center ">
 
         <div className="ptojects relative h-[40vh] w-[20vw] bg-purple-600">

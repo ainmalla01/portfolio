@@ -1,0 +1,10 @@
+| Element                     | Desktop Size   | Mobile Size   |
+| --------------------------- | -------------- | ------------- |
+| Main Heading (`SOFTWARE`)   | `text-[120px]` | `text-[52px]` |
+| Second Heading (`ENGINEER`) | `text-[110px]` | `text-[48px]` |
+| Subtitle                    | `text-[22px]`  | `text-[16px]` |
+| Tech Stack Text             | `text-[18px]`  | `text-[14px]` |
+| Navbar Links                | `text-[20px]`  | `text-[16px]` |
+| Buttons                     | `text-[18px]`  | `text-[15px]` |
+| Status Text                 | `text-[16px]`  | `text-[13px]` |
+| Logo Text                   | `text-[26px]`  | `text-[18px]` |

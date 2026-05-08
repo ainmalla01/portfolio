@@ -4,8 +4,11 @@ import React from 'react';
 
 const ContactMe = () => {
   return (
-    <section className="min-h-screen  flex items-center justify-center px-4" id='contact'>
-      <div className="max-w-4xl w-full">
+   <section 
+  id="contact"
+  className="min-h-screen  flex items-center justify-center px-4 "
+>
+      <div className="max-w-4xl w-full drop-shadow-[10px] border p-4 px-6 border-2 rounded-xl shadow-lg backdrop-blur-2xl">
         <h2 className="text-center text-2xl font-semibold text-gray-800 mb-2">
           <span className="text-white text-[40px]">Contact me</span>
         </h2>

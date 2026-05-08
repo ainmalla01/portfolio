@@ -11,7 +11,7 @@ export default function Home() {
       </section>
 
       {/* Overlay Section */}
-      <section className="relative h-[200vh] bg-transparent">
+      <section className="relative h-[200vh] bg-red-300">
         <motion.div
           className="sticky top-0 h-screen flex items-center justify-center bg-black"
           initial={{ opacity: 0 }}
