@@ -50,7 +50,7 @@ const AboutMe = () => {
   <div
     className="
     relative z-10
-    w-full max-w-6xl
+    w-full max-w-7xl
     border border-zinc-800
     bg-zinc-950
     rounded-2xl

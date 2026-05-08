@@ -4,43 +4,156 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPhoneAlt, FaEnvelope } from 're
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-10">
-      <div className="max-w-6xl mx-auto px-4 text-center space-y-6">
+   <footer
+  className="
+  relative
+  bg-black
+  border-t
+  border-zinc-800
+  overflow-hidden
+  "
+>
+  {/* glow */}
+  <div className="absolute top-[-80px] left-[20%] h-[200px] w-[200px] rounded-full bg-yellow-400/10 blur-3xl"></div>
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-4">
-          <a href="#" className="bg-white text-teal-700 p-3 rounded-full hover:bg-teal-500 hover:text-white transition">
-            <FaFacebookF />
-          </a>
-          <a href="#" className="bg-white text-teal-700 p-3 rounded-full hover:bg-teal-500 hover:text-white transition">
-            <FaTwitter />
-          </a>
-          <a href="#" className="bg-white text-teal-700 p-3 rounded-full hover:bg-teal-500 hover:text-white transition">
-            <FaLinkedinIn />
-          </a>
-        </div>
+  {/* grid bg */}
+  <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
-        {/* Address */}
-        <p className="text-sm">
-          250 Executive Park Blvd, Suite 3400 • San Francisco CA 94134 • United States
+  {/* main */}
+  <div
+    className="
+    relative z-10
+    max-w-7xl
+    mx-auto
+    px-6
+    md:px-12
+    py-16
+    "
+  >
+    
+    {/* top */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      {/* logo */}
+      <div>
+
+        <h1 className="text-4xl font-black text-white">
+          AIN<span className="text-yellow-400">.</span>
+        </h1>
+
+        <p className="text-zinc-400 mt-6 leading-[30px]">
+          Creative software engineer focused on building
+          modern, interactive, and memorable digital experiences.
         </p>
 
-        {/* Contact Info */}
-        <div className="flex justify-center items-center gap-6 flex-wrap text-sm">
-          <div className="flex items-center gap-2">
-            <FaPhoneAlt />
-            <span>+123-456-789</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaEnvelope />
-            <span>info@gmail.com</span>
-          </div>
+      </div>
+
+      {/* navigation */}
+      <div>
+
+        <h1 className="text-white text-xl font-bold mb-6">
+          Navigation
+        </h1>
+
+        <div className="flex flex-col gap-4">
+
+          <a
+            href="#home"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            Home
+          </a>
+
+          <a
+            href="#aboutme"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            About
+          </a>
+
+          <a
+            href="#projects"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            Projects
+          </a>
+
+          <a
+            href="#contact"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            Contact
+          </a>
+
         </div>
 
-        {/* Logo Placeholder */}
-        <h2 className="text-2xl font-semibold">Logo <span className="font-light">Here</span></h2>
       </div>
-    </footer>
+
+      {/* socials */}
+      <div>
+
+        <h1 className="text-white text-xl font-bold mb-6">
+          Connect
+        </h1>
+
+        <div className="flex flex-col gap-4">
+
+          <a
+            href="https://github.com/ainmalla01"
+            target="_blank"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="#"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="#"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="mailto:yourmail@gmail.com"
+            className="text-zinc-400 hover:text-yellow-400 duration-300"
+          >
+            Email
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    {/* line */}
+    <div className="h-[1px] w-full bg-zinc-800 my-12"></div>
+
+    {/* bottom */}
+    <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+
+      <p className="text-zinc-500 text-sm">
+        © 2026 Ain B. Malla. All rights reserved.
+      </p>
+
+      <div className="flex items-center gap-4">
+
+        <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
+
+        <p className="text-zinc-500 text-sm tracking-[3px] uppercase">
+          System Online
+        </p>
+
+      </div>
+    </div>
+  </div>
+</footer>
   );
 };
 
